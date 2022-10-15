@@ -1,0 +1,76 @@
+@import './helpers/variables';
+@import './helpers/fonts';
+
+@import './components/main-btn';
+
+// Start Globals
+html,
+body {
+    font-family: dinnext, Helvetica, sans-serif;
+    scroll-behavior: smooth;
+}
+// End Globals
+
+// Start Navbar
+.navbar {
+    position: relative;
+    background-color: $back-grey;
+    min-height: 80px;
+    font-size: 16px ;
+    @media (min-width: 992px)  and (max-width: 1024px) {
+        font-size: 14px ;
+    }
+    .navbar-toggler {
+        margin-left: 20px;
+        border-color: rgb(226, 226, 226);
+    }
+    a.navbar-brand {
+        overflow: visible;
+        z-index: 1;
+      
+        img {
+            max-height: 100px;
+            @media screen and (max-width: 992px) {
+                position: absolute !important;
+                top: 0;
+                right: 0;
+                max-height:50px;
+            }
+        }
+    }
+    > div {
+        .navbar-nav {
+            @media screen and (min-width: 1400px) {
+                margin-right: 150px;
+                align-items: center;
+            }
+            .nav-item {
+                align-items: center;
+                margin: 0 10px;
+                a.nav-link {
+                    color:  $main-green;
+                    margin: 0 20px;
+                    @media screen and (max-width: 1300px) {
+                        margin: 0 5px;
+                    }
+                    padding: 5px 25px 9px;
+                    @media screen and (max-width: 1200px) {
+                        padding: 5px 15px 9px;
+                    }
+                    &.active {
+                        @media screen and (max-width: 1200px) {
+                            display: inline-flex;
+                            margin-left: 21px;
+                        }
+                      
+                        margin-bottom: 1px;
+                        border-top: 1px solid $main-green;
+                        border-bottom: 1px solid $main-green;
+                    }
+                }
+            }
+        }
+    }
+}
+// End Navbar
+
