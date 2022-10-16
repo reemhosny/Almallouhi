@@ -182,6 +182,10 @@ body {
   border: 1px solid #debc57;
 }
 
+.growth {
+  background-color: #eae6dd;
+}
+
 .gold-block {
   height: 10px;
   background-color: #aa7b2d;
