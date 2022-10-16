@@ -120,7 +120,7 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-image: url('../images//Asset\ 2-1.png');
+        background-image: url('../images//Asset\ 2-2.jpeg');
         background-repeat: no-repeat;
     }
 
@@ -129,10 +129,39 @@ body {
         align-items: center;
         justify-content: center;
         flex-direction: column;
-        background-image: url('../images//Asset\ 2-3.png');
+        background-image: url('../images//Asset\ 2-3.jpeg');
         background-repeat: no-repeat;
     }
 }
+
+//Start Glipmpse
+
+@mixin flex-column {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.glimpse{
+    &__1{
+        background-color: $dark-green;
+       text-align: center;
+       padding: 20px 10px;
+       height: 350px;
+       @include flex-column();
+       color: $main-gold;
+    }
+
+    .btn-gallery{
+        margin-top: 80px;
+        color: #297e62;
+        background-color: white;
+        border: 1px solid #debc57;
+    }
+}
+
+//End Glimpse
 
 
 
