@@ -1,7 +1,7 @@
 @import './helpers/variables';
 @import './helpers/fonts';
 
-@import './components/main-btn';
+// @import './components/main-btn';
 
 // Start Globals
 html,
@@ -31,9 +31,6 @@ body {
         img {
             max-height: 100px;
             @media screen and (max-width: 992px) {
-                position: absolute !important;
-                top: 0;
-                right: 0;
                 max-height:50px;
             }
         }
@@ -46,7 +43,6 @@ body {
             }
             .nav-item {
                 align-items: center;
-                margin: 0 10px;
                 a.nav-link {
                     color:  $main-green;
                     margin: 0 20px;
@@ -66,6 +62,7 @@ body {
                         margin-bottom: 1px;
                         border-top: 1px solid $main-green;
                         border-bottom: 1px solid $main-green;
+                        font-weight: 500;
                     }
                 }
             }
@@ -73,4 +70,21 @@ body {
     }
 }
 // End Navbar
+
+
+// Start Footer 
+.gold-block{
+    height: 10px;
+    background-color: $dark-gold;
+}
+.footer{
+    background-image: url(../images/footer.png);
+    color: $main-gold;
+    padding: 60px 0 0 0;
+    @media screen and (max-width: 992px) {
+       text-align: center;
+    }
+}
+
+// End Footer
 
