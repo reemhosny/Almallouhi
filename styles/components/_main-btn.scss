@@ -1,0 +1,17 @@
+.btn-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    padding: 1px 10px 8px 10px;
+    transition: all 0.2s;
+    color: white;
+    text-decoration: none;
+    border: 1px solid white;
+    &:hover {
+        transform: translateY(-10px);
+        background-color: transparentize($main-green, 0.2);
+        color: white;
+        font-weight: 500;
+    }
+}

@@ -18,6 +18,24 @@
   font-weight: 300;
   src: url("/fonts/DINNEXTLTARABIC-LIGHT-2-2.ttf");
 }
+.btn-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 18px;
+  padding: 1px 10px 8px 10px;
+  transition: all 0.2s;
+  color: white;
+  text-decoration: none;
+  border: 1px solid white;
+}
+.btn-container:hover {
+  transform: translateY(-10px);
+  background-color: rgba(16, 111, 79, 0.8);
+  color: white;
+  font-weight: 500;
+}
+
 html,
 body {
   font-family: dinnext, Helvetica, sans-serif;
@@ -86,6 +104,36 @@ body {
     display: inline-flex;
     margin-left: 21px;
   }
+}
+
+.hero {
+  position: relative;
+  background: url("../images//Asset 1.png");
+  min-height: calc(100vh - 80px);
+  background-color: #106f4f;
+  background-size: cover;
+  background-position: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+}
+@media screen and (max-width: 992px) {
+  .hero {
+    text-align: center;
+  }
+}
+.hero .read-more {
+  background-color: #106f4f;
+}
+.hero .down-arrow {
+  position: absolute;
+  bottom: 50px;
+  left: 50%;
+  transform: translateX(-50%);
+}
+.hero .down-arrow img {
+  max-width: 35px;
 }
 
 .gold-block {
