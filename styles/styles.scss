@@ -55,15 +55,15 @@ body {
                         padding: 5px 15px 9px;
                     }
                     &.active {
-                        @media screen and (max-width: 1200px) {
-                            display: inline-flex;
-                            margin-left: 21px;
-                        }
-                      
                         margin-bottom: 1px;
                         border-top: 1px solid $main-green;
                         border-bottom: 1px solid $main-green;
                         font-weight: 500;
+                        
+                        @media screen and (max-width: 1200px) {
+                            display: inline-flex;
+                            margin-left: 21px;
+                        }
                     }
                 }
             }
