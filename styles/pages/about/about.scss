@@ -1,0 +1,83 @@
+@import '../../helpers/variables';
+
+section.hero {
+    background-image: url('../../../images/company\ front.png');
+    min-height: 600px;
+    border-bottom: 15px solid $main-green;
+    &::after {
+        content: none;
+    }
+}
+
+// Start About
+.about {
+    padding: $section-outer-spacing 20px;
+    .row {
+        img {
+            transform: translate(-30px, -30px);
+        }
+    }
+    h1 {
+        color: $main-green;
+        font-weight: bold;
+        font-size: 36px;
+        margin-bottom: 30px;
+    }
+    p {
+        color: $text-main;
+        margin-bottom: 60px;
+        font-size: 18px;
+    }
+    .right {
+        text-align: right;
+        .img-container {
+            display: inline-flex;
+            text-align: right;
+            border: 10px solid transparentize($main-green, 0.85);
+            img {
+                transition: all 0.3s;
+                max-height: 400px;
+            }
+        }
+    }
+}
+// End About
+
+// Start Ceo-letter
+.ceo-letter {
+    .left {
+        display: flex;
+        padding: 0;
+        .img-container {
+            width: 50%;
+            img {
+                width: 100%;
+            }
+        }
+    }
+    .right {
+        background-color: $main-red;
+        color: white;
+        padding: 25px 50px;
+        h2 {
+            font-size: 36px;
+            margin-bottom: 20px;
+        }
+        p {
+            font-size: 18px;
+            max-width: 700px;
+        }
+    }
+}
+// End Ceo-letter
+
+// Start Our-vision
+section.our-vision {
+    @extend .about;
+    .right {
+        .img-container {
+            border-color: $main-red;
+        }
+    }
+}
+// End Our-vision

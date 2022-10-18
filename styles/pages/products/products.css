@@ -1,0 +1,39 @@
+section.hero {
+  background-image: url("../../../images/grass.png");
+  border-bottom: 15px solid #106f4f;
+  min-height: 200px;
+  color: white;
+  text-align: center;
+  text-transform: uppercase;
+}
+section.hero::after {
+  content: none;
+}
+
+main.products {
+  background-image: url("../../../images/flower lines.png");
+  background-size: cover;
+  padding: 75px 20px;
+  position: relative;
+}
+main.products > img {
+  position: absolute;
+  top: 10px;
+  right: 0;
+  max-height: 75px;
+}
+@media screen and (max-width: 992px) {
+  main.products > img {
+    max-height: 50px;
+  }
+}
+main.products .product {
+  display: flex;
+  justify-content: center;
+}
+main.products .product img {
+  transition: 0.3s all;
+}
+main.products .product:hover img {
+  transform: translate(0, -25px);
+}/*# sourceMappingURL=products.css.map */

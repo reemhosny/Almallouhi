@@ -1,0 +1,66 @@
+section.hero {
+  background-image: url("../../../images/company front.png");
+  min-height: 600px;
+  border-bottom: 15px solid #008145;
+}
+section.hero::after {
+  content: none;
+}
+
+.about, section.our-vision {
+  padding: 75px 20px;
+}
+.about .row img, section.our-vision .row img {
+  transform: translate(-30px, -30px);
+}
+.about h1, section.our-vision h1 {
+  color: #008145;
+  font-weight: bold;
+  font-size: 36px;
+  margin-bottom: 30px;
+}
+.about p, section.our-vision p {
+  color: #939397;
+  margin-bottom: 60px;
+  font-size: 18px;
+}
+.about .right, section.our-vision .right {
+  text-align: right;
+}
+.about .right .img-container, section.our-vision .right .img-container {
+  display: inline-flex;
+  text-align: right;
+  border: 10px solid rgba(0, 129, 69, 0.15);
+}
+.about .right .img-container img, section.our-vision .right .img-container img {
+  transition: all 0.3s;
+  max-height: 400px;
+}
+
+.ceo-letter .left {
+  display: flex;
+  padding: 0;
+}
+.ceo-letter .left .img-container {
+  width: 50%;
+}
+.ceo-letter .left .img-container img {
+  width: 100%;
+}
+.ceo-letter .right {
+  background-color: #e3003a;
+  color: white;
+  padding: 25px 50px;
+}
+.ceo-letter .right h2 {
+  font-size: 36px;
+  margin-bottom: 20px;
+}
+.ceo-letter .right p {
+  font-size: 18px;
+  max-width: 700px;
+}
+
+section.our-vision .right .img-container {
+  border-color: #e3003a;
+}/*# sourceMappingURL=about.css.map */

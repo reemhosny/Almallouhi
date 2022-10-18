@@ -1,0 +1,116 @@
+section.hero {
+  background-image: url("../../../images/grass.png");
+  min-height: 150px;
+  color: #e0b949;
+  text-align: center;
+  text-transform: uppercase;
+}
+section.hero::after {
+  content: none;
+}
+section.hero .logo {
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  justify-content: center;
+  background-color: #fafafa;
+  padding: 30px 0;
+}
+section.hero .logo p {
+  width: 50%;
+}
+@media screen and (max-width: 992px) {
+  section.hero .logo p {
+    width: 80%;
+  }
+}
+
+main.projects {
+  padding: 75px 20px;
+  background-image: url("../../../images/flower lines.png");
+  background-size: cover;
+}
+main.projects .project {
+  background-color: white;
+  padding: 0;
+  box-shadow: 4px 0 12px 0px #bdbdbd;
+}
+main.projects .project:not(:last-child) {
+  margin-bottom: 50px;
+}
+main.projects .project .left {
+  display: flex;
+  flex-wrap: wrap;
+}
+@media screen and (max-width: 768px) {
+  main.projects .project .left .img-container {
+    margin: auto;
+  }
+}
+main.projects .project .left .info {
+  display: flex;
+  flex-direction: column;
+  padding: 10px 30px;
+}
+main.projects .project .left .info div {
+  font-weight: 500;
+  margin-top: 10px;
+  color: #106f4f;
+}
+main.projects .project .left .info time,
+main.projects .project .left .info span {
+  color: #b0b6bf;
+}
+main.projects .project .right {
+  margin: 40px 0;
+  padding: 0 40px;
+}
+@media screen and (min-width: 1200px) {
+  main.projects .project .right {
+    border-left: 1px solid #b0b6bf;
+  }
+}
+main.projects .project .right h3 {
+  font-weight: bold;
+  color: #106f4f;
+  font-size: 24px;
+}
+main.projects .project .right p {
+  color: #b0b6bf;
+  font-size: 18px;
+  max-width: 400px;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+}
+nav .pagination {
+  margin-top: 30px;
+  position: relative;
+}
+nav .pagination::after {
+  content: "";
+  position: absolute;
+  top: 31px;
+  left: 5%;
+  width: 90%;
+  z-index: -1;
+  border-top: 3px solid #106f4f;
+}
+nav .pagination .page-item {
+  margin: 10px;
+}
+nav .pagination .page-item .page-link {
+  color: #106f4f;
+  border: 2px solid #106f4f;
+  font-weight: 500;
+  font-size: 18px;
+}
+nav .pagination .page-item .page-link img {
+  margin-bottom: 4px;
+}
+nav .pagination .page-item.active .page-link {
+  background-color: #106f4f;
+  color: white;
+}/*# sourceMappingURL=greenhouses.css.map */

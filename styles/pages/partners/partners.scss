@@ -1,0 +1,70 @@
+@import '../../helpers/variables';
+
+// Start Hero
+section.hero {
+    background-image: linear-gradient(#f2f2f2, #f2f2f2);
+    border-bottom: 15px solid #023530;
+    min-height: 150px;
+    color: $main-green;
+    text-align: center;
+    text-transform: uppercase;
+    &::after {
+        content: none;
+    }
+}
+// End Hero
+
+// Start Partners
+main.partners {
+    padding: $section-outer-spacing 20px;
+    text-align: center;
+    @media screen and (max-width: 768px) {
+        margin: 0 20px;
+    }
+    h2 {
+        font-size: 32px;
+        color: $text-main-darker;
+        font-weight: 700;
+    }
+    p {
+        color: $text-main;
+        max-width: 600px;
+        margin: auto;
+    }
+    .img-container {
+        margin-top: 60px;
+        margin-bottom: 20px;
+        width: 60px;
+        height: 50px;
+        border-radius: 100px;
+        background: white;
+        display: inline-flex;
+        justify-content: center;
+        align-items: center;
+    }
+    .brands {
+        background-color: $back-grey;
+        padding: 50px 30px;
+        position: relative;
+        &::before {
+            content: '';
+            width: 300px;
+            border-top: 2px solid $back-green;
+            position: absolute;
+            top: -40px;
+            z-index: -1;
+            left: 50%;
+            transform: translateX(-50%);
+        }
+        > div {
+            padding: 40px;
+        }
+    }
+}
+// End Partners
+
+// Start Footer
+.footer {
+    border-top-color: $main-red;
+}
+// End Footer
