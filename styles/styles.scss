@@ -48,7 +48,7 @@ body {
                 img{
                     width: 22px;
                 }
-                
+
                 a.nav-link {
                     color:  $main-green;
                     margin: 0 20px;
@@ -141,6 +141,30 @@ body {
     }
 }
 
+// Start plantation
+.plantation{
+    .carasoul-plantation{
+        padding: 30px 0;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        flex-direction: column;
+        h2{
+            color: $main-green;
+            font-weight: bold;
+        }
+
+        &__content{
+            position: relative;
+            background-color: $main-green;
+            height: 50px;
+            width: 100%;
+        }
+        
+    }
+  }
+// End planation
+
 //Start Glipmpse
 
 @mixin flex-column {
@@ -156,7 +180,7 @@ body {
         background-color: $dark-green;
        text-align: center;
        padding: 20px 10px;
-       height: 350px;
+       height: 345px;
        @include flex-column();
        color: $main-gold;
     }
