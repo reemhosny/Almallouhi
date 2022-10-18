@@ -2,10 +2,9 @@
 
 // Start Hero
 section.hero {
-    background-image: linear-gradient(#f2f2f2, #f2f2f2);
-    border-bottom: 15px solid #023530;
+    background-image: url('../../../images/grass.png');
     min-height: 150px;
-    color: $main-green;
+    color: $main-gold;
     text-align: center;
     text-transform: uppercase;
     &::after {
@@ -23,11 +22,11 @@ main.partners {
     }
     h2 {
         font-size: 32px;
-        color: $text-main-darker;
+        color: #6b7a8b;
         font-weight: 700;
     }
     p {
-        color: $text-main;
+        color: #bdbdbd;
         max-width: 600px;
         margin: auto;
     }
@@ -43,13 +42,13 @@ main.partners {
         align-items: center;
     }
     .brands {
-        background-color: $back-grey;
         padding: 50px 30px;
         position: relative;
+        border: 4px solid $main-green;
+        margin-top: 20px;
         &::before {
             content: '';
             width: 300px;
-            border-top: 2px solid $back-green;
             position: absolute;
             top: -40px;
             z-index: -1;
@@ -63,8 +62,3 @@ main.partners {
 }
 // End Partners
 
-// Start Footer
-.footer {
-    border-top-color: $main-red;
-}
-// End Footer
