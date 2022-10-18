@@ -1,8 +1,7 @@
 section.hero {
-  background-image: linear-gradient(#a0a09c, #a0a09c);
-  border-bottom: 15px solid #023530;
-  min-height: 150px;
-  color: white;
+  background-image: url("../../../images/grass.png");
+  min-height: 100px;
+  color: #e0b949;
   text-align: center;
   text-transform: uppercase;
 }
@@ -10,72 +9,52 @@ section.hero::after {
   content: none;
 }
 
-main.contact {
-  padding: 75px 20px;
-  text-align: center;
+main.contact .sub-title {
+  color: #a9aec5;
 }
-@media screen and (max-width: 768px) {
-  main.contact {
-    margin: 0 20px;
-  }
-}
-main.contact h2 {
-  font-size: 32px;
-  color: #606060;
-  font-weight: 700;
-  position: relative;
-}
-main.contact h2::before {
-  content: "";
-  width: 300px;
-  border-top: 2px solid #13403a;
-  position: absolute;
-  top: -40px;
-  z-index: -1;
-  left: 50%;
-  transform: translateX(-50%);
-}
-main.contact p {
-  color: #939397;
-  max-width: 600px;
-  margin: auto;
-}
-main.contact .img-container {
-  margin-bottom: 20px;
-  width: 60px;
-  border-radius: 100px;
-  background: white;
-  display: inline-flex;
-  justify-content: center;
-  align-items: center;
-}
-main.contact .form-container {
-  background-color: #f9f9f9;
-  padding: 30px;
-  max-width: 800px;
-  margin: auto;
-  margin-top: 40px;
-}
-main.contact .form-container .form-group {
+main.contact .contact-info {
+  margin-top: 30px;
   display: flex;
-  margin-bottom: 30px;
+  flex-direction: column;
+  color: #a9aec5;
 }
-main.contact .form-container .form-group:not(:last-child) {
-  align-items: center;
+
+.contact-details {
+  color: #a9aec5;
 }
-main.contact .form-container .form-group label {
-  width: 100px;
+.contact-details ::-moz-placeholder {
+  color: #a9aec5;
+}
+.contact-details :-ms-input-placeholder {
+  color: #a9aec5;
+}
+.contact-details ::placeholder {
+  color: #a9aec5;
+}
+.contact-details ::-webkit-input-placeholder {
+  color: #a9aec5;
+}
+.contact-details :-ms-input-placeholder { /* Internet Explorer 10-11 */
+  color: #a9aec5;
+}
+.contact-details .form-control:focus,
+.contact-details .form-control:hover,
+.contact-details .form-control:active,
+.contact-details .form-control:focus-visible {
+  box-shadow: none;
+  outline: none;
+  border-color: #106f4f;
+  border: 2px solid #006848 !important;
+}
+.contact-details textarea {
+  resize: none;
 }
 
 .our-location {
-  width: calc(100vw - 17px);
-  min-height: 300px;
+  min-height: 252px;
   background-color: #aaa;
+  margin: 80px 0 20px 0;
   display: flex;
   justify-content: center;
   align-items: center;
-}
-
-.footer {
-  border-top-color: #e3003a;
 }/*# sourceMappingURL=contact.css.map */

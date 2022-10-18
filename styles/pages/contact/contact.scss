@@ -2,10 +2,9 @@
 
 // Start Hero
 section.hero {
-    background-image: linear-gradient($back-grey-darker, $back-grey-darker);
-    border-bottom: 15px solid #023530;
-    min-height: 150px;
-    color: white;
+    background-image: url('../../../images/grass.png');
+    min-height: 100px;
+    color: $main-gold;
     text-align: center;
     text-transform: uppercase;
     &::after {
@@ -16,74 +15,52 @@ section.hero {
 
 // Start Contact
 main.contact {
-    padding: $section-outer-spacing 20px;
-    text-align: center;
-    @media screen and (max-width: 768px) {
-        margin: 0 20px;
+    .sub-title{
+      color: #a9aec5;
     }
-    h2 {
-        font-size: 32px;
-        color: $text-main-darker;
-        font-weight: 700;
-        position: relative;
-        &::before {
-            content: '';
-            width: 300px;
-            border-top: 2px solid $back-green;
-            position: absolute;
-            top: -40px;
-            z-index: -1;
-            left: 50%;
-            transform: translateX(-50%);
+   .contact-info{
+    margin-top: 30px;
+    display: flex;
+    flex-direction: column;
+    color: #a9aec5;
+   }
+}
+
+.contact-details{
+    color: #a9aec5;
+    ::placeholder{
+        color: #a9aec5;
+       }
+       ::-webkit-input-placeholder{
+        color: #a9aec5;
+       }
+       :-ms-input-placeholder { /* Internet Explorer 10-11 */
+        color: #a9aec5;
+      }
+
+      .form-control:focus, 
+      .form-control:hover,
+      .form-control:active,
+      .form-control:focus-visible {
+        box-shadow: none;
+        outline: none;
+        border-color: $main-green;
+        border: 2px solid $dark-green !important;
         }
-    }
-    p {
-        color: $text-main;
-        max-width: 600px;
-        margin: auto;
-    }
-    .img-container {
-        margin-bottom: 20px;
-        width: 60px;
-        border-radius: 100px;
-        background: white;
-        display: inline-flex;
-        justify-content: center;
-        align-items: center;
-    }
-    .form-container {
-        background-color: $back-grey;
-        padding: 30px;
-        max-width: 800px;
-        margin: auto;
-        margin-top: 40px;
-        .form-group {
-            display: flex;
-            margin-bottom: 30px;
-            &:not(:last-child) {
-                align-items: center;
-            }
-            label {
-                width: 100px;
-            }
-        }
-    }
+
+      textarea {
+        resize: none;
+      }
 }
 // End Contact
 
 // Start Our-location
 .our-location {
-    width: calc(100vw - 17px);
-    min-height: 300px;
+    min-height: 252px;
     background-color: #aaa;
+    margin: 80px 0 20px 0;
     display: flex;
     justify-content: center;
     align-items: center;
 }
 // End Our-location
-
-// Start Footer
-.footer {
-    border-top-color: $main-red;
-}
-// End Footer

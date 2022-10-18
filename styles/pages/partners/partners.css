@@ -1,6 +1,6 @@
 section.hero {
   background-image: url("../../../images/grass.png");
-  min-height: 150px;
+  min-height: 100px;
   color: #e0b949;
   text-align: center;
   text-transform: uppercase;
