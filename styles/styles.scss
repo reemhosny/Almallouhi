@@ -44,16 +44,22 @@ body {
             }
             .nav-item {
                 align-items: center;
+
+                img{
+                    width: 22px;
+                }
+                
                 a.nav-link {
                     color:  $main-green;
                     margin: 0 20px;
                     @media screen and (max-width: 1300px) {
                         margin: 0 5px;
                     }
-                    padding: 5px 22px 9px;
+                    padding: 5px 20px 9px;
                     @media screen and (max-width: 1200px) {
                         padding: 5px 15px 9px;
                     }
+
                     &.active {
                         margin-bottom: 1px;
                         border-top: 1px solid $main-green;
