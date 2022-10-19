@@ -1,9 +1,12 @@
 section.hero {
-  background-image: url("../../../images/grass.png");
   min-height: 100px;
   color: #e0b949;
   text-align: center;
   text-transform: uppercase;
+  background-color: #006644;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 section.hero::after {
   content: none;

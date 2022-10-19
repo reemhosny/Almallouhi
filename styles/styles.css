@@ -151,9 +151,9 @@ body {
   }
 }
 
-.hero {
+.home-hero {
   position: relative;
-  background: url("../images//Asset 1.png");
+  background: url("../images/Asset 1.png");
   min-height: calc(100vh - 80px);
   background-color: #106f4f;
   background-size: cover;
@@ -164,20 +164,20 @@ body {
   color: white;
 }
 @media screen and (max-width: 992px) {
-  .hero {
+  .home-hero {
     text-align: center;
   }
 }
-.hero .read-more {
+.home-hero .read-more {
   background-color: #106f4f;
 }
-.hero .down-arrow {
+.home-hero .down-arrow {
   position: absolute;
   bottom: 50px;
   left: 50%;
   transform: translateX(-50%);
 }
-.hero .down-arrow img {
+.home-hero .down-arrow img {
   max-width: 35px;
 }
 
@@ -231,7 +231,7 @@ body {
   background-color: #006848;
   text-align: center;
   padding: 20px 10px;
-  height: 345px;
+  height: 349px;
   display: flex;
   align-items: center;
   justify-content: center;

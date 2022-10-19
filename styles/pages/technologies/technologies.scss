@@ -2,13 +2,17 @@
 
 // Start Hero
 section.hero {
-    background-image: url('/images/grass.png');
+    background-image: url('/images/Asset 51.png');
     min-height: 100px;
     color: white;
     text-align: center;
     text-transform: uppercase;
     &::after {
         content: none;
+    }
+
+    img{
+        object-fit: cover;
     }
 }
 // End Hero

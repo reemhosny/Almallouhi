@@ -1,9 +1,9 @@
 section.hero {
-  background-image: url("../../../images/grass.png");
   min-height: 150px;
   color: #e0b949;
   text-align: center;
   text-transform: uppercase;
+  background-color: #006644;
 }
 section.hero::after {
   content: none;

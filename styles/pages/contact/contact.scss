@@ -1,10 +1,10 @@
 @import '../../helpers/variables';
 
 // Start Hero
-section.hero {
-    background-image: url('../../../images/grass.png');
+.hero {
     min-height: 100px;
     color: $main-gold;
+    background-color: #006644 ;
     text-align: center;
     text-transform: uppercase;
     &::after {
@@ -15,6 +15,9 @@ section.hero {
 
 // Start Contact
 main.contact {
+  img{
+    width: 100%;
+  }
     .sub-title{
       color: #a9aec5;
     }

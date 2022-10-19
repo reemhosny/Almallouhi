@@ -2,11 +2,11 @@
 
 // Start Hero
 section.hero {
-    background-image: url('../../../images/grass.png');
     min-height: 150px;
     color: $main-gold;
     text-align: center;
     text-transform: uppercase;
+    background-color: #006644;
     &::after {
         content: none;
     }

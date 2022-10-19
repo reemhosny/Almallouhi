@@ -1,14 +1,17 @@
-section.hero {
-  background-image: url("../../../images/grass.png");
+.hero {
   min-height: 100px;
   color: #e0b949;
+  background-color: #006644;
   text-align: center;
   text-transform: uppercase;
 }
-section.hero::after {
+.hero::after {
   content: none;
 }
 
+main.contact img {
+  width: 100%;
+}
 main.contact .sub-title {
   color: #a9aec5;
 }

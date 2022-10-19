@@ -1,5 +1,5 @@
 section.hero {
-  background-image: url("/images/grass.png");
+  background-image: url("/images/Asset 51.png");
   min-height: 100px;
   color: white;
   text-align: center;
@@ -7,6 +7,10 @@ section.hero {
 }
 section.hero::after {
   content: none;
+}
+section.hero img {
+  -o-object-fit: cover;
+     object-fit: cover;
 }
 
 .technologies {
