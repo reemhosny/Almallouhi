@@ -26,7 +26,7 @@ section.hero {
     }
 
     p{
-        color: #bdbdbd;
+        color: $primary-grey;
     }
 
     img{
@@ -55,7 +55,7 @@ section.hero {
         color: #074b46;
     }
     p{
-        color: #bdbdbd;
+        color: $primary-grey;
     }
 
     @media screen and (max-width: 992px) {

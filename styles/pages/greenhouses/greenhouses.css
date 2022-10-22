@@ -33,7 +33,7 @@ main.projects {
 main.projects .project {
   background-color: white;
   padding: 0;
-  box-shadow: 4px 0 12px 0px #bdbdbd;
+  box-shadow: 4px 0 12px 0px #939393;
 }
 main.projects .project:not(:last-child) {
   margin-bottom: 50px;
@@ -45,6 +45,10 @@ main.projects .project .left {
 @media screen and (max-width: 768px) {
   main.projects .project .left .img-container {
     margin: auto;
+    width: 100%;
+  }
+  main.projects .project .left .img-container img {
+    width: 100%;
   }
 }
 main.projects .project .left .info {

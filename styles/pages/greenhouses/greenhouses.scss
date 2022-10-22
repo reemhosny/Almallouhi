@@ -36,7 +36,7 @@ main.projects {
     .project {
         background-color: white;
         padding: 0;
-        box-shadow: 4px 0 12px 0px #bdbdbd;
+        box-shadow: 4px 0 12px 0px $primary-grey;
         &:not(:last-child) {
             margin-bottom: 50px;
         }
@@ -46,6 +46,10 @@ main.projects {
             .img-container {
                 @media screen and (max-width: 768px) {
                     margin: auto;
+                    width: 100%;
+                    img{
+                        width: 100%;
+                    }
                 }
             }
             .info {

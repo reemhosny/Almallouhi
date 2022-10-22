@@ -108,7 +108,7 @@ body {
 }
 @media screen and (max-width: 992px) {
   .navbar a.navbar-brand img {
-    max-height: 50px;
+    max-height: 70px;
   }
 }
 @media screen and (min-width: 1400px) {
@@ -135,7 +135,12 @@ body {
 }
 @media screen and (max-width: 1200px) {
   .navbar > div .navbar-nav .nav-item a.nav-link {
-    padding: 5px 15px 9px;
+    padding: 5px 4px 9px;
+  }
+}
+@media (min-width: 992px) and (max-width: 1024px) {
+  .navbar > div .navbar-nav .nav-item a.nav-link {
+    padding: 5px 10px 9px;
   }
 }
 .navbar > div .navbar-nav .nav-item a.nav-link.active {
